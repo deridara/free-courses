@@ -12,5 +12,4 @@ const fun = (num, power) => {
 
 const stringAnswer = String(fun(n, e));
 process.stdout.write(stringAnswer);
-//console.log(stringAnswer);
 /* Put your code here */
