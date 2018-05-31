@@ -29,3 +29,6 @@ const str = `${hours(secs)} ${hoursWord} ${minutes(secs)} ${minutesWord} ${secon
 process.stdout.write(str);
 
 /* Put your code here */ 
+// task1 - 8 баллов
+// task2 - 0 баллов
+// task3 - 0 баллов
