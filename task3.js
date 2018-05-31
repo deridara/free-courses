@@ -24,11 +24,15 @@ const hoursWord = word(hours)(secs)('час', 'часа', 'часов');
 const minutesWord = word(minutes)(secs)('минута', 'минуты', 'минут')
 const secondsWord = word(seconds)(secs)('секунда', 'секунды', 'секунд')
 
-const str = `${hours(secs)} ${hoursWord} ${minutes(secs)} ${minutesWord} ${seconds(secs)} ${secondsWord}`;
+const hourString = hours(secs) > 0 ? `${hours(secs)} ${hoursWord} ` : '';
+const minutesString = minutes(secs) > 0 ? `${minutes(secs)} ${minutesWord} ` : '';
+const secondsString = seconds(secs) > 0 ? `${seconds(secs)} ${secondsWord}` : ''
+
+const str = `${hourString}${minutesString}${secondsString}`;
 
 process.stdout.write(str);
 
 /* Put your code here */ 
 // task1 - 8 баллов
 // task2 - 0 баллов
-// task3 - 0 баллов
+// task3 - 1 баллов
