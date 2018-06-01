@@ -24,11 +24,13 @@ const hoursWord = word(hours)(secs)('час', 'часа', 'часов');
 const minutesWord = word(minutes)(secs)('минута', 'минуты', 'минут')
 const secondsWord = word(seconds)(secs)('секунда', 'секунды', 'секунд')
 
-const hourString = hours(secs) > 0 ? `${hours(secs)} ${hoursWord} ` : '';
-const minutesString = minutes(secs) > 0 ? `${minutes(secs)} ${minutesWord} ` : '';
-const secondsString = seconds(secs) > 0 ? `${seconds(secs)} ${secondsWord}` : ''
+const hourString = hours(secs) > 0 ? `${hours(secs)} ${hoursWord}` : '';
+const minutesString = minutes(secs) > 0 ? `${minutes(secs)} ${minutesWord}` : '';
+const secondsString = seconds(secs) > 0 ? `${seconds(secs)} ${secondsWord}` : '';
+const space1 = hours(secs) > 0 && minutes(secs) > 0 ? ' ' : '';
+const space2 = seconds(secs) > 0 && minutes(secs) > 0 ? ' ' : '';
 
-const str = `${hourString}${minutesString}${secondsString}`;
+const str = `${hourString}${space1}${minutesString}${space2}${secondsString}`;
 
 process.stdout.write(str);
 
