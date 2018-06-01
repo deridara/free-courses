@@ -1,7 +1,7 @@
 /* Task 3 */
 
-const sec1 = Number(process.argv[1]);
-const sec2 = Number(process.argv[2]);
+const sec1 = Number(process.argv[2]);
+const sec2 = Number(process.argv[3]);
 
 const secs =  sec1 + sec2;
 
@@ -37,4 +37,4 @@ process.stdout.write(str);
 /* Put your code here */ 
 // task1 - 8 баллов
 // task2 - 0 баллов
-// task3 - 10 баллов
+// task3 - 0 баллов

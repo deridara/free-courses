@@ -1,6 +1,6 @@
 /* Task 1 */
-const n = Number(process.argv[1]);
-const e = Number(process.argv[2]);
+const n = Number(process.argv[2]);
+const e = Number(process.argv[3]);
 
 const fun = (num, power) => {
     let a = 0;
