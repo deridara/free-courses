@@ -37,4 +37,4 @@ process.stdout.write(str);
 /* Put your code here */ 
 // task1 - 8 баллов
 // task2 - 0 баллов
-// task3 - 1 баллов
+// task3 - 10 баллов
