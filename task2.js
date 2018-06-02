@@ -1,7 +1,7 @@
 /* Task 2 */
 
-const str = process.argv[1];
-const n = Number(process.argv[2]); 
+const str = process.argv[2];
+const n = Number(process.argv[3]); 
 
 const Cesir = (str, n) => {
     let res = '';
