@@ -27,14 +27,15 @@ const secondsWord = word(seconds)(secs)('секунда', 'секунды', 'с�
 const hourString = hours(secs) > 0 ? `${hours(secs)} ${hoursWord}` : '';
 const minutesString = minutes(secs) > 0 ? `${minutes(secs)} ${minutesWord}` : '';
 const secondsString = seconds(secs) > 0 ? `${seconds(secs)} ${secondsWord}` : '';
-const space1 = hours(secs) > 0 && minutes(secs) > 0 ? ' ' : '';
+const space1 = hours(secs) > 0 && (minutes(secs) > 0 || seconds(secs) >0) ? ' ' : '';
 const space2 = seconds(secs) > 0 && minutes(secs) > 0 ? ' ' : '';
 
 const str = `${hourString}${space1}${minutesString}${space2}${secondsString}`;
 
-process.stdout.write(str);
+console.log(str);
 
 /* Put your code here */ 
-// task1 - 0 баллов
-// task2 - 0 баллов
-// task3 - 0 баллов
+// task1 - 8 баллов
+// task2 - 10 баллов
+// task3 - 10 баллов
+// сумма 28
