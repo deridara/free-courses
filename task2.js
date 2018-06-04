@@ -23,6 +23,6 @@ const Cesir = (str, n) => {
     return res;
 }
 
-console.log(Cesir(str, n));
+console.log(Cesir(str, n))
 
 /* Put your code here */
