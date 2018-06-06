@@ -26,4 +26,4 @@ const fun = (num, power) => {
     return a;
 }
 
-fun(n, e);
+console.log(fun(n, e));
